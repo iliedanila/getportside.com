@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <clipPath id="squircle">
+      <path d="M256 20 C 430 20 492 82 492 256 C 492 430 430 492 256 492 C 82 492 20 430 20 256 C 20 82 82 20 256 20 Z"/>
+    </clipPath>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#63AEBE"/>
+      <stop offset="0.55" stop-color="#3E8FA0"/>
+      <stop offset="1" stop-color="#2A6E7E"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E5563"/>
+      <stop offset="1" stop-color="#153E49"/>
+    </linearGradient>
+    <linearGradient id="paneL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFCF8"/>
+      <stop offset="1" stop-color="#E8E4DA"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#squircle)">
+    <rect width="512" height="512" fill="url(#sky)"/>
+    <rect y="332" width="512" height="180" fill="url(#sea)"/>
+    <path d="M0 332 h512" stroke="#7FC4D2" stroke-width="3" opacity="0.6"/>
+    <g opacity="0.45" stroke="#7FC4D2" stroke-width="4" stroke-linecap="round">
+      <path d="M60 376 q20 -10 40 0 q20 10 40 0"/>
+      <path d="M372 376 q20 -10 40 0 q20 10 40 0"/>
+      <path d="M96 428 q20 -10 40 0 q20 10 40 0"/>
+      <path d="M336 428 q20 -10 40 0 q20 10 40 0"/>
+    </g>
+
+    <g>
+      <rect x="88" y="96" width="152" height="212" rx="22" fill="url(#paneL)"/>
+      <rect x="88" y="96" width="152" height="52" rx="22" fill="#D8D2C4"/>
+      <rect x="88" y="126" width="152" height="22" fill="#D8D2C4"/>
+      <g stroke="#B9B2A2" stroke-width="10" stroke-linecap="round">
+        <path d="M112 178 h104"/>
+        <path d="M112 212 h72"/>
+        <path d="M112 246 h88"/>
+      </g>
+    </g>
+    <g>
+      <rect x="272" y="96" width="152" height="212" rx="22" fill="#1C4A57"/>
+      <rect x="272" y="96" width="152" height="52" rx="22" fill="#16404C"/>
+      <rect x="272" y="126" width="152" height="22" fill="#16404C"/>
+      <g stroke="#3E8FA0" stroke-width="10" stroke-linecap="round">
+        <path d="M296 178 h104"/>
+        <path d="M296 212 h72"/>
+        <path d="M296 246 h88"/>
+      </g>
+    </g>
+
+    <g fill="#FFC94A">
+      <path d="M236 190 l40 0 0 -14 30 26 -30 26 0 -14 -40 0 Z"/>
+      <path d="M276 258 l-40 0 0 -14 -30 26 30 26 0 -14 40 0 Z" fill="#FDFCF8"/>
+    </g>
+
+    <g transform="translate(256, 400)" stroke="#FFC94A" stroke-width="14" stroke-linecap="round" fill="none">
+      <circle cx="0" cy="-38" r="14"/>
+      <path d="M0 -24 V 44"/>
+      <path d="M-30 -2 H 30"/>
+      <path d="M-42 22 Q -42 52 0 56 Q 42 52 42 22"/>
+      <path d="M-42 22 l-12 -8 M-42 22 l14 -4" stroke-width="10"/>
+      <path d="M42 22 l12 -8 M42 22 l-14 -4" stroke-width="10"/>
+    </g>
+    <rect width="512" height="256" fill="url(#gloss)"/>
+  </g>
+
+  <path d="M256 20 C 430 20 492 82 492 256 C 492 430 430 492 256 492 C 82 492 20 430 20 256 C 20 82 82 20 256 20 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+</svg>

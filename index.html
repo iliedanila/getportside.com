@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portside — the two-pane file manager for macOS</title>
+  <meta name="description" content="Portside is a native two-pane file manager for macOS with a real built-in terminal and transfers that never overwrite without asking. One-time purchase.">
+  <meta property="og:title" content="Portside — the two-pane file manager for macOS">
+  <meta property="og:description" content="Two panes. A real terminal. No surprises. Native, keyboard-first, one-time purchase.">
+  <meta property="og:image" content="https://getportside.com/assets/icon.svg">
+  <meta property="og:url" content="https://getportside.com/">
+  <meta name="theme-color" content="#153e49">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="./">
+    <svg width="21" height="21" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="1.5" y="3" width="9" height="18" rx="3" fill="none" stroke="#3E8FA0" stroke-width="2.6"/>
+      <rect x="13.5" y="3" width="9" height="18" rx="3" fill="#3E8FA0"/>
+    </svg>
+    Portside
+  </a>
+  <nav class="topnav" aria-label="Site">
+    <a href="#features">Features</a>
+    <a href="#terminal">Terminal</a>
+    <a href="#keyboard">Keyboard</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn--gold btn--small" href="#pricing">Buy&nbsp;·&nbsp;$14</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ hero: the icon, enacted ============ -->
+<section class="hero">
+  <div class="hero-paper">
+    <p class="eyebrow">Native · macOS 26 · Apple silicon</p>
+    <h1>Two panes. A&nbsp;real terminal. No&nbsp;surprises.</h1>
+    <p class="hero-sub">
+      Portside is a native, keyboard-first file manager for macOS — the two-pane
+      discipline of the classics, a working shell below deck, and a transfer
+      engine that never overwrites anything you didn’t confirm.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn btn--gold" href="#pricing">Buy Portside — $14</a>
+      <a class="btn btn--ghost" href="#features">See what it does ↓</a>
+    </div>
+    <p class="hero-fine">7-day free trial · One-time purchase · No subscription</p>
+  </div>
+
+  <div class="hero-sea">
+    <!-- Stylised rendering of the app window. Replace with a real screenshot before launch. -->
+    <div class="appwin" role="img" aria-label="The Portside window: two file panes side by side with a terminal panel underneath">
+      <div class="appwin-titlebar">
+        <span class="appwin-dot"></span><span class="appwin-dot"></span><span class="appwin-dot"></span>
+        <span class="appwin-title">Portside — ~/Projects</span>
+      </div>
+      <div class="appwin-panes">
+        <div class="appwin-pane">
+          <div class="appwin-path">~/Projects</div>
+          <div class="appwin-row appwin-row--dim"><span>..</span><span></span></div>
+          <div class="appwin-row appwin-row--dir"><span>Designs</span><span>—</span></div>
+          <div class="appwin-row appwin-row--dir appwin-row--sel"><span>Portside</span><span>—</span></div>
+          <div class="appwin-row appwin-row--dir"><span>Recordings</span><span>—</span></div>
+          <div class="appwin-row"><span>notes.md</span><span>4 KB</span></div>
+          <div class="appwin-row"><span>release.sh</span><span>2 KB</span></div>
+          <div class="appwin-status"><span>6 items</span><span>412 GB free</span></div>
+        </div>
+        <div class="appwin-pane">
+          <div class="appwin-path">/Volumes/Anchor</div>
+          <div class="appwin-row appwin-row--dim"><span>..</span><span></span></div>
+          <div class="appwin-row appwin-row--dir"><span>Backups</span><span>—</span></div>
+          <div class="appwin-row appwin-row--dir"><span>Site</span><span>—</span></div>
+          <div class="appwin-row"><span>mockups.zip</span><span>118 MB</span></div>
+          <div class="appwin-row"><span>icon.svg</span><span>6 KB</span></div>
+          <div class="appwin-status"><span>5 items</span><span>1.2 TB free</span></div>
+        </div>
+      </div>
+      <div class="appwin-term">
+        <div class="appwin-term-line"><span class="appwin-prompt">~/Projects ❯</span> swift build</div>
+        <div class="appwin-term-line"><span class="appwin-ok">Build complete!</span> (12.4s)</div>
+        <div class="appwin-term-line"><span class="appwin-prompt">~/Projects ❯</span> <span class="appwin-caret"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-seam" aria-hidden="true">
+    <svg width="30" height="34" viewBox="0 0 32 36" fill="none">
+      <path d="M2 7 H18 V2 L30 11 L18 20 V15 H2 Z" fill="#FFC94A"/>
+      <path d="M30 21 H14 V16 L2 25 L14 34 V29 H30 Z" fill="#FDFCF8"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ features ============ -->
+<section class="band" id="features">
+  <div class="band-inner">
+    <p class="eyebrow">What’s aboard</p>
+    <h2>The two-pane discipline, kept.</h2>
+    <p class="lede">One window, two folders, and commands that do exactly what they say.</p>
+
+    <div class="grid">
+      <div class="card">
+        <span class="glyph">dual-pane</span>
+        <h3>Two panes, held in tabs</h3>
+        <p>Each side keeps its own tabs, sort and path. Quit mid-work; Portside reopens exactly as you left it — folders, tabs, window frame and all.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">login-shell</span>
+        <h3>A terminal below deck</h3>
+        <p>Not a command palette: a real login shell in a real PTY. Start a dev server, run a build, hold an ssh session — it follows the pane as you navigate.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">stage + commit</span>
+        <h3>Transfers that stage, then commit</h3>
+        <p>Copies land under a hidden name and take the real one only once complete. A failed or cancelled transfer leaves your files exactly as they were.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">merge</span>
+        <h3>Conflicts get answers, not accidents</h3>
+        <p>Every collision is a question — keep or overwrite, per item. Folders merge instead of clobbering. Nothing is replaced until its replacement fully exists.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">undo</span>
+        <h3>Deletion keeps receipts</h3>
+        <p>F8 moves things to the Trash and ⌘Z brings them back. Permanent deletion exists — as its own explicit command, never a silent fallback.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">native</span>
+        <h3>Mac-native to the last detail</h3>
+        <p>SwiftUI and AppKit, light and dark, Quick Look previews, Favorites, volume eject, free space in the footer. No Electron anywhere aboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ terminal ============ -->
+<section class="band band--sea" id="terminal">
+  <div class="band-inner">
+    <p class="eyebrow">Below deck</p>
+    <h2>A working shell in the hull.</h2>
+    <p class="lede">
+      Expand the bar at the bottom of the window and you’re in your login shell —
+      not a sandboxed imitation. Processes run, servers serve, ssh holds.
+      Change folders in the pane and the shell walks with you; ⌘-click a link
+      in the output and it opens in your browser.
+    </p>
+    <div class="termwin" role="img" aria-label="Portside's terminal panel running a dev server and an ssh session">
+      <div class="appwin-term-line"><span class="appwin-prompt">~/Projects/site ❯</span> npm run dev</div>
+      <div class="appwin-term-line">&nbsp;&nbsp;➜&nbsp; Local: <span class="appwin-ok">http://localhost:5173/</span> &nbsp;— ⌘-click to open</div>
+      <div class="appwin-term-line"><span class="appwin-prompt">~/Projects/site ❯</span> ssh pier22</div>
+      <div class="appwin-term-line"><span class="appwin-prompt">pier22 ❯</span> <span class="appwin-caret"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ safety ============ -->
+<section class="band band--sand" id="safety">
+  <div class="band-inner">
+    <p class="eyebrow">Safety</p>
+    <h2>Nothing goes overboard.</h2>
+    <p class="lede">Four rules the transfer engine will not break — not for speed, not for convenience.</p>
+
+    <ul class="covenant">
+      <li>
+        <span class="tick" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="5" r="2.6"/><path d="M12 7.6V20"/><path d="M7 11h10"/><path d="M4.5 15c.5 3.5 3.5 5 7.5 5s7-1.5 7.5-5"/></svg></span>
+        <span><strong>Never overwrite unconfirmed.</strong> A file is only ever replaced after you explicitly said so — per item, not per batch.</span>
+      </li>
+      <li>
+        <span class="tick" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="5" r="2.6"/><path d="M12 7.6V20"/><path d="M7 11h10"/><path d="M4.5 15c.5 3.5 3.5 5 7.5 5s7-1.5 7.5-5"/></svg></span>
+        <span><strong>Replacement before removal.</strong> Nothing is destroyed until whatever replaces it fully exists on disk.</span>
+      </li>
+      <li>
+        <span class="tick" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="5" r="2.6"/><path d="M12 7.6V20"/><path d="M7 11h10"/><path d="M4.5 15c.5 3.5 3.5 5 7.5 5s7-1.5 7.5-5"/></svg></span>
+        <span><strong>Moves across drives keep the source</strong> until the destination is confirmed. If that last step fails, you have both copies — and Portside says exactly what happened.</span>
+      </li>
+      <li>
+        <span class="tick" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="5" r="2.6"/><path d="M12 7.6V20"/><path d="M7 11h10"/><path d="M4.5 15c.5 3.5 3.5 5 7.5 5s7-1.5 7.5-5"/></svg></span>
+        <span><strong>Success means read back.</strong> An operation reports done only after the result is verified on disk — not when the call returns.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ keyboard ============ -->
+<section class="band band--harbor" id="keyboard">
+  <div class="band-inner">
+    <p class="eyebrow">Keyboard</p>
+    <h2>Hands on the keys, always.</h2>
+    <p class="lede">The classic commander keys, honoured — and the Mac ones beside them.</p>
+
+    <div class="keys">
+      <div class="keyrow"><span class="keycap">F5</span> Copy</div>
+      <div class="keyrow"><span class="keycap">F6</span> Move</div>
+      <div class="keyrow"><span class="keycap">F7</span> New Folder</div>
+      <div class="keyrow"><span class="keycap">F8</span> Move to Trash</div>
+      <div class="keyrow"><span class="keycap">⌥F8</span> Delete Permanently</div>
+      <div class="keyrow"><span class="keycap">F2</span> Rename</div>
+      <div class="keyrow"><span class="keycap">⌘Z</span> Undo Move to Trash</div>
+      <div class="keyrow"><span class="keycap">⇧⌘G</span> Go to Folder</div>
+      <div class="keyrow"><span class="keycap">⌘L</span> Edit Path</div>
+      <div class="keyrow"><span class="keycap">⌥⌘C</span> Copy Path</div>
+      <div class="keyrow"><span class="keycap">⌘⇧.</span> Hidden Files</div>
+      <div class="keyrow"><span class="keycap">⇧⌘I</span> Invert Selection</div>
+    </div>
+
+    <p class="keys-note">The full roster lives in the app — press <span class="keycap">⇧⌘/</span></p>
+  </div>
+</section>
+
+<!-- ============ pricing ============ -->
+<section class="band" id="pricing">
+  <div class="band-inner">
+    <p class="eyebrow" style="text-align:center">Pricing</p>
+    <h2 style="text-align:center">One price. No meter running.</h2>
+
+    <div class="price-card">
+      <p class="price-figure"><sup>$</sup>14</p>
+      <span class="price-unit">One-time purchase</span>
+      <ul class="price-includes">
+        <li>The app, signed and notarized</li>
+        <li>A personal license that moves with you, Mac to Mac</li>
+        <li>Every update included, forever</li>
+        <li>14-day refunds, no interrogation</li>
+      </ul>
+      <a class="btn btn--gold" href="#pricing">Buy Portside</a>
+      <p class="price-trial"><a href="#pricing">…or start the free 7-day trial</a></p>
+      <p class="price-paddle">Checkout by Paddle — card, Apple&nbsp;Pay or PayPal, with VAT and receipts handled.</p>
+    </div>
+
+    <p class="price-req">Requires macOS 26 (Tahoe) or later · Apple silicon</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="band band--sand" id="faq">
+  <div class="band-inner">
+    <p class="eyebrow">FAQ</p>
+    <h2>Fair questions.</h2>
+
+    <div class="faq">
+      <details>
+        <summary>What does it run on?</summary>
+        <p>macOS 26 (Tahoe) or later, on Apple silicon. There is no Intel build.</p>
+      </details>
+      <details>
+        <summary>Why isn’t it on the App Store?</summary>
+        <p>The built-in terminal runs your real login shell with real processes — the App Store sandbox doesn’t allow that. Selling direct is what keeps the terminal real, and the price one-time.</p>
+      </details>
+      <details>
+        <summary>How do updates work?</summary>
+        <p>Every purchase includes every update, forever — no upgrade fees, no paid 2.0. Portside checks this site for new versions and installs them in place, with your consent, never behind your back.</p>
+      </details>
+      <details>
+        <summary>Is there a trial?</summary>
+        <p>Yes — 7 days, the full app, no account needed. When it ends, Portside asks for a license; your files and settings stay exactly where they were.</p>
+      </details>
+      <details>
+        <summary>Where does my license key come from?</summary>
+        <p>Paddle emails it to you right after checkout, together with your receipt. If you ever lose it, write to <a href="mailto:support@getportside.com">support@getportside.com</a>.</p>
+      </details>
+      <details>
+        <summary>Does Portside phone home?</summary>
+        <p>No telemetry, no analytics, no account. Portside talks to this site for two things only: checking for updates, and confirming your license is active on this Mac. Neither carries anything about your files or how you use the app.</p>
+      </details>
+      <details>
+        <summary>Can I move my license to a new Mac?</summary>
+        <p>Yes — a license is active on one Mac at a time, and moving is self-serve: enter your key on the new Mac and the license moves with you. The old install steps aside on its next check. No ticket, no deactivation ceremony.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="brand" href="./">
+      <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="1.5" y="3" width="9" height="18" rx="3" fill="none" stroke="#7FC4D2" stroke-width="2.6"/>
+        <rect x="13.5" y="3" width="9" height="18" rx="3" fill="#7FC4D2"/>
+      </svg>
+      Portside
+    </a>
+    <div class="footer-links">
+      <a href="mailto:support@getportside.com">support@getportside.com</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="refunds.html">Refunds</a>
+    </div>
+    <p class="footer-copy">© 2026 Ilie Danila. Portside is a proprietary application. The embedded terminal is built on SwiftTerm, used under the MIT license.</p>
+  </div>
+</footer>
+
+</body>
+</html>
