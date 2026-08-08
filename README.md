@@ -52,7 +52,9 @@ These are wired into the copy and need Ilie's decision or a real artifact:
    licensing was Classic-only): a small Cloudflare Worker on the
    `transaction.completed` webhook generates an Ed25519-signed key, stores
    it, and emails it. Because the policy is one-active-Mac-at-a-time, the
-   Worker also serves two endpoints: `activate` (key + hashed machine id →
+   Worker needs a transactional email sender for key delivery — Paddle
+   Billing's own email is the receipt only (e.g. Resend/Postmark free tier).
+   The Worker also serves two endpoints: `activate` (key + hashed machine id →
    this Mac becomes the active seat, displacing the previous one) and
    `confirm` (piggybacked on the app's update check; a displaced install
    learns here and drops to unlicensed with a clear message). Signature
