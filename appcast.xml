@@ -3,73 +3,43 @@
     <channel>
         <title>Portside</title>
         <item>
-            <title>0.3.0</title>
-            <pubDate>Sat, 15 Aug 2026 00:36:39 +0300</pubDate>
-            <sparkle:version>0.3.0</sparkle:version>
-            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <title>0.3.1</title>
+            <pubDate>Sat, 15 Aug 2026 02:38:41 +0300</pubDate>
+            <sparkle:version>0.3.1</sparkle:version>
+            <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<!DOCTYPE html><html><body><pre style="font-family: -apple-system; white-space: pre-wrap">
 
-Portside now keeps itself current — and this first self-updating build
-also delivers everything landed since 0.2.0: tabs, a real terminal, and a
-window that remembers your working day.
+Portside now has its trial and license aboard — and this update is the
+first one delivered by the app itself.
 
 ### What's new
 
-- A standard Mac installation: download `Portside-0.3.0.dmg`, open it, and
-  follow the visible Portside-to-Applications arrow. One signed, notarized disk
-  image serves trial installs, purchases, and later Sparkle updates; there is no
-  customer-facing zip or installer package.
-- Self-updating via Sparkle (decision 0057): the app checks
-  getportside.com's feed and installs new versions in place, then
-  relaunches. No check runs before the one-time consent prompt is
-  answered, and "Check for Updates…" under About asks explicitly at any
-  time. These notes appear in the update dialog itself.
-- Tabs in both panes: each side keeps its own ordered tabs with their
-  folders and sort; background tabs stay live but are never the target
-  of an operation, and a tab holding an open dialog or a running
-  transfer refuses to close.
-- The command bar expands into a real terminal — a login shell in a
-  PTY, one per tab, toggled with ⌃`. It follows the active pane's
-  folder while the shell is idle, dev servers and ssh sessions keep
-  running, and ⌘-clicked http(s) links open in your browser.
-- Permanent deletion as its own explicit command (⌥F8 / ⌥⌘⌫) beside
-  Trash-only F8, and ⌘Z "Undo Move to Trash" brings the last trashed
-  batch back.
-- Overwrite in a conflict is now permanent — this reverses 0.2.0's
-  behaviour. The replacement is copied in full and swapped into place
-  atomically, and the displaced item is then deleted for good, never to
-  the Trash; the confirmation dialog says exactly that before you
-  agree. (It also means volumes without a Trash can overwrite.)
-- Favorites can be renamed and reordered in the sidebar.
-- The workspace survives relaunch: tabs, sorts, the active tab, the
-  hidden-items toggle, and the window's size and position all return.
-  The Settings window (⌘,) chooses startup behaviour — reopen last
-  workspace or start fresh in a chosen folder — and System/Light/Dark
-  appearance.
-- Typed navigation: Go to Folder (⇧⌘G) and in-place path editing
-  (⌘L or double-click the path).
-- Copy Path (⌥⌘C) and Copy Name, selection tools (deselect all,
-  invert, select by pattern), volume eject from the volume menus,
-  free space in each pane's footer, and a keyboard-shortcuts
-  reference (⇧⌘/).
+- A 7-day free trial with the full app, starting at first launch. The
+  Portside menu carries the honest countdown ("Trial: 5 days left"), and
+  when the trial ends the app locks — cleanly, with Buy and Sign In as
+  the doors — while everything you had open waits underneath and comes
+  back untouched the moment you sign in.
+- Sign in with the email and password from your purchase and this Mac is
+  licensed. One license is active on one Mac at a time: signing in on a
+  new Mac moves it, and the old one says exactly that — never "your
+  trial has ended" to someone who already paid, and never a Buy button
+  on a Mac that's already licensed.
+- Portside is a one-window app now: no stray ⌘N windows, and closing
+  the window keeps the app running — the Window menu brings it back
+  exactly as you left it.
+- A record carried to a new Mac by Migration Assistant or a backup
+  restore asks for a sign-in there instead of quietly counting as a
+  second licensed Mac.
 
 ### Known limitations
 
-- Builds before 0.3.0 predate the updater and cannot update in place;
-  they are superseded by one final manual DMG download.
-- The published feed carries the latest release only (deferred in
-  decision 0057 with its consequences recorded there).
-- Name collisions offer Keep or Overwrite per item, and folders merge —
-  but keep-both/rename-on-conflict is still not available.
-- Once a cross-volume move has committed an item at the destination,
-  that item can no longer be cancelled; cancellation between items and
-  mid-copy still works.
-- No SFTP or other remote protocols. No deep search.
+- The license check-in needs the network once a week; 14 days offline
+  locks the app until one check-in succeeds.
 </pre></body></html>
 ]]></description>
-            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.3.0/Portside-0.3.0.dmg" length="2684454" type="application/octet-stream" sparkle:edSignature="1O6ohVvDiQrqR3JJ+WvjnuxibzyZ7CzA0BSsGRNqKtMO55fg+zVTkLKQUSVzK5xjkNoRB2gLekhSYEgwmzI5AQ=="/>
+            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.3.1/Portside-0.3.1.dmg" length="2687145" type="application/octet-stream" sparkle:edSignature="LQXXeFnNoKrOXQGlPNvbSqOZb/CEkK1rp5VZnKCfzXxcirBFyu9NTJHF1/5tpJiVbAeXSuDnMPVMB2vq+PyLDg=="/>
         </item>
     </channel>
 </rss>
