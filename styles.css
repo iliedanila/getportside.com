@@ -141,16 +141,16 @@ h2 {
 
 .btn--ghost { border-color: var(--sandline); color: var(--ink); background: transparent; }
 
-/* A button-shaped truth: checkout is not open yet. No hover lift, no
-   pointer, half-strength gold — visibly not a thing you can click. */
-.btn--soon {
-  background: var(--gold);
-  color: var(--gold-ink);
-  border-color: var(--gold-deep);
-  opacity: 0.55;
-  cursor: default;
+/* The rehearsal marker under the sandbox Buy button: quiet but plain.
+   Deleted at go-live together with the sandbox checkout values. */
+.price-mode {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft, #5b6b70);
+  opacity: 0.8;
 }
-.btn--soon:hover { transform: none; box-shadow: none; }
+
+.btn--gold[type="button"] { cursor: pointer; font: inherit; }
 .btn--ghost:hover { border-color: var(--teal); }
 
 .btn--small { font-size: 0.85rem; padding: 0.45rem 0.85rem; border-radius: 8px; }

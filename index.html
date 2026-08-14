@@ -227,7 +227,8 @@
         <li>Every update included, forever</li>
         <li>14-day refunds, no interrogation</li>
       </ul>
-      <span class="btn btn--soon" aria-disabled="true">Buy Portside — checkout opens at launch</span>
+      <button class="btn btn--gold" id="buy-portside" type="button">Buy Portside — €14</button>
+      <p class="price-mode">Test mode: this checkout runs against Paddle's sandbox — test cards only, no real charges. Live checkout arrives at launch.</p>
       <p class="price-trial"><a href="https://github.com/iliedanila/getportside.com/releases/download/v0.3.0/Portside-0.3.0.dmg">Start the free 7-day trial today</a></p>
       <p class="price-paddle">Checkout by Paddle — card, Apple&nbsp;Pay or PayPal, with VAT and receipts handled.</p>
     </div>
@@ -296,5 +297,17 @@
   </div>
 </footer>
 
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script>
+  // SANDBOX checkout (rehearsal): the client token and price id are the
+  // sandbox account's, public by design. Go-live swaps exactly three
+  // things here: remove the Environment.set line, use the live client
+  // token, use the live price id — and delete the .price-mode note above.
+  Paddle.Environment.set("sandbox");
+  Paddle.Initialize({ token: "test_4e1c1b22bde12c4c57d20994d0d" });
+  document.getElementById("buy-portside").addEventListener("click", function () {
+    Paddle.Checkout.open({ items: [{ priceId: "pri_01kztpa6zg8pkgagzr57knswmz", quantity: 1 }] });
+  });
+</script>
 </body>
 </html>
