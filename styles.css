@@ -371,8 +371,9 @@ h2 {
   border: 1px solid rgba(14, 42, 51, 0.35);
   border-bottom-width: 3px;
   border-radius: 7px;
-  padding: 0.22rem 0.5rem;
-  min-width: 2.6rem;
+  padding: 0.22rem 0.4rem;
+  width: 3.9rem;
+  box-sizing: border-box;
   text-align: center;
   flex: none;
   white-space: nowrap;
