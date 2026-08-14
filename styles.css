@@ -360,12 +360,15 @@ h2 {
 
 .keyrow { display: flex; align-items: center; gap: 0.75rem; font-size: 0.92rem; }
 
+/* Real keys on a dark deck: paper caps, dark ink — readable at a
+   glance, not teal-on-teal. */
 .keycap {
   font-family: var(--mono);
-  font-size: 0.8rem;
-  color: var(--foam);
-  background: linear-gradient(#24586a, #1a4653);
-  border: 1px solid var(--harbor-edge);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #153e49;
+  background: linear-gradient(#fffdf7, #f1ede2);
+  border: 1px solid rgba(14, 42, 51, 0.35);
   border-bottom-width: 3px;
   border-radius: 7px;
   padding: 0.22rem 0.5rem;
@@ -373,6 +376,7 @@ h2 {
   text-align: center;
   flex: none;
   white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .keys-note { margin-top: 1.9rem; font-size: 0.9rem; opacity: 0.85; }
