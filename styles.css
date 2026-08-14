@@ -140,6 +140,17 @@ h2 {
 .btn--gold:hover { transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.45), 0 4px 10px rgba(14, 42, 51, 0.28); }
 
 .btn--ghost { border-color: var(--sandline); color: var(--ink); background: transparent; }
+
+/* A button-shaped truth: checkout is not open yet. No hover lift, no
+   pointer, half-strength gold — visibly not a thing you can click. */
+.btn--soon {
+  background: var(--gold);
+  color: var(--gold-ink);
+  border-color: var(--gold-deep);
+  opacity: 0.55;
+  cursor: default;
+}
+.btn--soon:hover { transform: none; box-shadow: none; }
 .btn--ghost:hover { border-color: var(--teal); }
 
 .btn--small { font-size: 0.85rem; padding: 0.45rem 0.85rem; border-radius: 8px; }
