@@ -3,43 +3,30 @@
     <channel>
         <title>Portside</title>
         <item>
-            <title>0.3.1</title>
-            <pubDate>Sat, 15 Aug 2026 02:38:41 +0300</pubDate>
-            <sparkle:version>0.3.1</sparkle:version>
-            <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
+            <title>0.3.2</title>
+            <pubDate>Sat, 15 Aug 2026 21:30:46 +0300</pubDate>
+            <sparkle:version>0.3.2</sparkle:version>
+            <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<!DOCTYPE html><html><body><pre style="font-family: -apple-system; white-space: pre-wrap">
 
-Portside now has its trial and license aboard — and this update is the
-first one delivered by the app itself.
+Getting home is now one key — and the buttons look like buttons.
 
 ### What's new
 
-- A 7-day free trial with the full app, starting at first launch. The
-  Portside menu carries the honest countdown ("Trial: 5 days left"), and
-  when the trial ends the app locks — cleanly, with Buy and Sign In as
-  the doors — while everything you had open waits underneath and comes
-  back untouched the moment you sign in.
-- Sign in with the email and password from your purchase and this Mac is
-  licensed. One license is active on one Mac at a time: signing in on a
-  new Mac moves it, and the old one says exactly that — never "your
-  trial has ended" to someone who already paid, and never a Buy button
-  on a Mac that's already licensed.
-- Portside is a one-window app now: no stray ⌘N windows, and closing
-  the window keeps the app running — the Window menu brings it back
-  exactly as you left it.
-- A record carried to a new Mac by Migration Assistant or a backup
-  restore asks for a sign-in there instead of quietly counting as a
-  second licensed Mac.
-
-### Known limitations
-
-- The license check-in needs the network once a week; 14 days offline
-  locks the app until one check-in succeeds.
+- Home from anywhere: Go → Home (⇧⌘H, the Finder key) returns the
+  active pane to your Home folder, and every pane's path bar carries a
+  house button doing the same for that pane.
+- The Favorites sidebar answers ⌃⌘S — Finder's own sidebar shortcut.
+- The pane header's controls (volumes, home, favorites) are larger,
+  highlight under the pointer, and carry tooltips — visibly buttons.
+- The license record in your Keychain is left strictly alone by
+  development builds, so macOS permission dialogs about it cannot
+  reappear once granted.
 </pre></body></html>
 ]]></description>
-            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.3.1/Portside-0.3.1.dmg" length="2687145" type="application/octet-stream" sparkle:edSignature="LQXXeFnNoKrOXQGlPNvbSqOZb/CEkK1rp5VZnKCfzXxcirBFyu9NTJHF1/5tpJiVbAeXSuDnMPVMB2vq+PyLDg=="/>
+            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.3.2/Portside-0.3.2.dmg" length="2688156" type="application/octet-stream" sparkle:edSignature="B0/TOm/Cq+1SthwHZ4ApLJhR3b2QRGraGkNvljk4m9a57ORWqo+k2+RyGZu2Mjy3NLMxyHcA7DbdJWyB9mxXAQ=="/>
         </item>
     </channel>
 </rss>
