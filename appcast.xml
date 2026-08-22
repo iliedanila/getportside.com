@@ -3,68 +3,56 @@
     <channel>
         <title>Portside</title>
         <item>
-            <title>0.4.0</title>
-            <pubDate>Thu, 20 Aug 2026 02:35:43 +0300</pubDate>
-            <sparkle:version>0.4.0</sparkle:version>
-            <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+            <title>0.5.0</title>
+            <pubDate>Sat, 22 Aug 2026 10:30:14 +0300</pubDate>
+            <sparkle:version>0.5.0</sparkle:version>
+            <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<!DOCTYPE html><html><body><pre style="font-family: -apple-system; white-space: pre-wrap">
 
-Portside can now work with files beyond this Mac — through its own SFTP panes
-or as a real SMB network drive shared with Finder.
+Portside gets better at staying where you work: tabs you can arrange and move
+between panes, folders that remember how you sorted them, a Go to Folder field
+that completes paths, drops that land on the folder you point at, and panes
+that follow a folder you rename.
 
 ### What's new
 
-- Connect to an SFTP server from Portside with a password or a Portside Key.
-  New host keys are shown before trust, changed keys are refused, and saved
-  remote tabs and Favorites return through an explicit Reconnect rather than a
-  surprise network connection. Password storage is optional and scoped to the
-  exact server endpoint in the macOS Keychain.
-- Browse live remote folders, Quick View remote files, and transfer files
-  between the Mac and SFTP with byte progress, cancellation, conflict choices,
-  and recovery messages that name anything left behind. Local folders can be
-  uploaded as complete trees; remote-source folder copies and decomposed folder
-  merges fail closed instead of guessing at identity over SFTP. Writable SFTP
-  panes support new folders and files, rename, copy and move within one live
-  connection, and permanent removal of individual files and symbolic links.
-- Mount an SMB network drive without leaving Portside. Mount Network Drive… is
-  the first item in each pane's Volumes menu and in both Go-menu volume lists;
-  macOS asks for credentials, the share appears in Finder too, and Portside
-  opens the exact mounted volume in the pane that requested it.
-- Keep Both joins Keep and Overwrite for name conflicts, choosing Finder-style
-  copy names atomically so an existing item is never overwritten by the choice.
-- Search now has Folder and Deep scopes. Folder is the familiar live filter;
-  Deep walks local subfolders by name without following links or crossing the
-  starting volume, stopping truthfully after the first 200 matches.
-- Arrows move the commander cursor without changing marks; Space toggles the
-  item under it and advances; Shift-arrow extends a marked range. File
-  operations use the marks, or the cursor when nothing is marked.
-- Local files can be dragged from Portside into other macOS applications as
-  ordinary file drags. Portside offers copy only to an external destination,
-  so completing that drag never removes the original.
-- The global header now carries the design's Favorites, Connect, Search, and
-  Appearance controls. Names get more room by default, and each pane remembers
-  its resized file-table columns across tabs and relaunches.
+- Tabs can be dragged to reorder, jumped to with ⌘1–⌘9, and moved whole to
+  the other pane by drag or ⇧⌘M. A moved tab keeps its folder, selection,
+  sort, and embedded terminal session.
+- A folder you re-sort remembers that sort: arriving there again — in any tab
+  of either pane, and after a relaunch — applies it. Folders you never
+  re-sorted keep the tab's sort. The most recent 500 folders are remembered.
+- Go to Folder (⌘⇧G) completes folder names as you type (Tab accepts the
+  completion) and offers a menu of recently typed paths — the last 50 that
+  resolved to a real folder.
+- Settings adds a pane text size (Small, Medium, Large), a choice of terminal
+  shell (leave it empty for your login shell), and a terminal text size
+  (9–24 pt) that applies live to open sessions.
+- Dropping onto a folder row drops into that folder — the `..` row included —
+  and a drag that rests over a folder springs it open. Packages, symbolic
+  links, and a dragged row itself never act as drop targets.
+- When the folder a pane shows is renamed or moved on the same disk, the pane
+  follows it — selection, cursor, and per-folder memories intact — instead of
+  reporting it gone.
 
 ### Known limitations
 
-- SFTP cannot prove mount or stable directory identity with protocol v3, so
-  copying a folder from SFTP, cross-provider folder merging, overwriting a
-  folder on either side of an SFTP operation, and permanently deleting an SFTP
-  folder are refused before mutation. Individual remote files and symbolic
-  links can be deleted permanently; SFTP has no Trash.
-- Deep search is local-only. SFTP source folders cannot be downloaded as whole
-  trees, and separate SFTP connections cannot transfer directly between each
-  other. Connection sharing between remote tabs is deferred, so a new tab from
-  an SFTP tab starts at local Home.
-- Each Mount Network Drive address must name exactly one SMB share root such as
-  `smb://server/share`, not a folder inside it. Portside keeps no SMB connection
-  history or password and does not auto-remount; macOS owns the authentication
-  prompt and Keychain choice.
+- A followed rename ends what it cannot carry: a confirmation dialog or a
+  running transfer rooted in the renamed folder is cancelled with a notice,
+  and a folder moved to another volume is not followed. Only local folders
+  follow; SFTP cannot prove folder identity.
+- Path completion and the recents menu are local-only and live in the Go to
+  Folder dialog, not in the header's inline path editor.
+- A pane's only tab cannot move to the other pane, and a tab with an open
+  dialog or a transfer in progress can neither move nor close.
+- There is no gesture yet to make a folder forget its remembered sort.
+- A changed terminal shell applies to shells opened afterwards; open sessions
+  keep theirs. Terminal font family and theme are not configurable yet.
 </pre></body></html>
 ]]></description>
-            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.4.0/Portside-0.4.0.dmg" length="4690772" type="application/octet-stream" sparkle:edSignature="ml6EvvyKHKC5UJWURHX6FQsI4uDhGXxZK9iz/Aq+FWzxh/fDxhrsYEnCBKOsX+CNp85KRN9SFHfkAeCFXn3VAA=="/>
+            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.5.0/Portside-0.5.0.dmg" length="4798391" type="application/octet-stream" sparkle:edSignature="WMSAPslV6q7g6eQUCWF04GSj+rfTPuulnTkzoqGPLNGzvdqyw5upt2CGavsnkJ+JNbHDRlL2IsWhJNSYr9YLCQ=="/>
         </item>
     </channel>
 </rss>
