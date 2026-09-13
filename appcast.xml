@@ -3,34 +3,15 @@
     <channel>
         <title>Portside</title>
         <item>
-            <title>0.6.0</title>
-            <pubDate>Sun, 13 Sep 2026 10:29:17 +0300</pubDate>
-            <sparkle:version>0.6.0</sparkle:version>
-            <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
+            <title>0.6.1</title>
+            <pubDate>Sun, 13 Sep 2026 13:32:22 +0000</pubDate>
+            <sparkle:version>0.6.1</sparkle:version>
+            <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<!DOCTYPE html><html><body><pre style="font-family: -apple-system; white-space: pre-wrap">
 
-Search finds filenames throughout the current folder and its subfolders, with
-wildcard and regular-expression support. File panes keep using the full window,
-and folder entry and window closing follow predictable keyboard behavior.
-
-### What's new
-
-- Search (⌘F) always includes subfolders. Filename patterns such as `*.md`
-  work directly; the optional Regex switch accepts expressions such as
-  `\.(md|txt)$`. Plain text finds part of a filename. Typing directly in a
-  pane keeps the live current-folder filter.
-- Search results show each item's containing folder. Loading, empty, failed,
-  and results states fill the available pane height.
-- Search becomes available after the destination folder loads successfully.
-  If observation follows a renamed folder but fails before its new listing
-  arrives, Search closes and discards results rooted at the old location.
-- Entering a folder highlights `..`, so pressing Enter again returns to its
-  parent and highlights the folder just left. Typing a filter moves the cursor
-  to a matching item instead, including while the folder's first listing loads.
-- ⌘W closes the window even when several tabs are open. Portside keeps running;
-  Window → Portside reopens it. Close Tab remains in the File menu and tab strip.
+This maintenance release includes the same app features and behavior as 0.6.0.
 
 ### Known limitations
 
@@ -42,7 +23,7 @@ and folder entry and window closing follow predictable keyboard behavior.
   Typing directly in an SFTP pane still filters its current folder.
 </pre></body></html>
 ]]></description>
-            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.6.0/Portside-0.6.0.dmg" length="4819514" type="application/octet-stream" sparkle:edSignature="yDWbQLCPFy9WkEUKdxqmxeyRmmkrpCs36cEMcSiD71Ms585EDwrC9b9POepS1IH8yCLcfH4WiT6EwbvarcuaAg=="/>
+            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.6.1/Portside-0.6.1.dmg" length="4817456" type="application/octet-stream" sparkle:edSignature="RK+F/S1yu6ntZrwS7aSmsoeMNAfWq36TynmsqJ+MiqM3Ffs04oeYYdnQE08fKErCmrvjuq1AHVypKb4SinSCBQ=="/>
         </item>
     </channel>
 </rss>
