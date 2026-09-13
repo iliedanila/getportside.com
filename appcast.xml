@@ -3,56 +3,46 @@
     <channel>
         <title>Portside</title>
         <item>
-            <title>0.5.0</title>
-            <pubDate>Sat, 22 Aug 2026 10:30:14 +0300</pubDate>
-            <sparkle:version>0.5.0</sparkle:version>
-            <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
+            <title>0.6.0</title>
+            <pubDate>Sun, 13 Sep 2026 10:29:17 +0300</pubDate>
+            <sparkle:version>0.6.0</sparkle:version>
+            <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<!DOCTYPE html><html><body><pre style="font-family: -apple-system; white-space: pre-wrap">
 
-Portside gets better at staying where you work: tabs you can arrange and move
-between panes, folders that remember how you sorted them, a Go to Folder field
-that completes paths, drops that land on the folder you point at, and panes
-that follow a folder you rename.
+Search finds filenames throughout the current folder and its subfolders, with
+wildcard and regular-expression support. File panes keep using the full window,
+and folder entry and window closing follow predictable keyboard behavior.
 
 ### What's new
 
-- Tabs can be dragged to reorder, jumped to with ⌘1–⌘9, and moved whole to
-  the other pane by drag or ⇧⌘M. A moved tab keeps its folder, selection,
-  sort, and embedded terminal session.
-- A folder you re-sort remembers that sort: arriving there again — in any tab
-  of either pane, and after a relaunch — applies it. Folders you never
-  re-sorted keep the tab's sort. The most recent 500 folders are remembered.
-- Go to Folder (⌘⇧G) completes folder names as you type (Tab accepts the
-  completion) and offers a menu of recently typed paths — the last 50 that
-  resolved to a real folder.
-- Settings adds a pane text size (Small, Medium, Large), a choice of terminal
-  shell (leave it empty for your login shell), and a terminal text size
-  (9–24 pt) that applies live to open sessions.
-- Dropping onto a folder row drops into that folder — the `..` row included —
-  and a drag that rests over a folder springs it open. Packages, symbolic
-  links, and a dragged row itself never act as drop targets.
-- When the folder a pane shows is renamed or moved on the same disk, the pane
-  follows it — selection, cursor, and per-folder memories intact — instead of
-  reporting it gone.
+- Search (⌘F) always includes subfolders. Filename patterns such as `*.md`
+  work directly; the optional Regex switch accepts expressions such as
+  `\.(md|txt)$`. Plain text finds part of a filename. Typing directly in a
+  pane keeps the live current-folder filter.
+- Search results show each item's containing folder. Loading, empty, failed,
+  and results states fill the available pane height.
+- Search becomes available after the destination folder loads successfully.
+  If observation follows a renamed folder but fails before its new listing
+  arrives, Search closes and discards results rooted at the old location.
+- Entering a folder highlights `..`, so pressing Enter again returns to its
+  parent and highlights the folder just left. Typing a filter moves the cursor
+  to a matching item instead, including while the folder's first listing loads.
+- ⌘W closes the window even when several tabs are open. Portside keeps running;
+  Window → Portside reopens it. Close Tab remains in the File menu and tab strip.
 
 ### Known limitations
 
-- A followed rename ends what it cannot carry: a confirmation dialog or a
-  running transfer rooted in the renamed folder is cancelled with a notice,
-  and a folder moved to another volume is not followed. Only local folders
-  follow; SFTP cannot prove folder identity.
-- Path completion and the recents menu are local-only and live in the Go to
-  Folder dialog, not in the header's inline path editor.
-- A pane's only tab cannot move to the other pane, and a tab with an open
-  dialog or a transfer in progress can neither move nor close.
-- There is no gesture yet to make a folder forget its remembered sort.
-- A changed terminal shell applies to shells opened afterwards; open sessions
-  keep theirs. Terminal font family and theme are not configurable yet.
+- Search matches filenames only, returns the first 200 matches, and stays on
+  its starting volume. It does not follow symbolic links or descend into packages.
+- Regex matching is case-insensitive by default; inline flags can change it.
+  Invalid or excessively expensive expressions stop with an editable error.
+- Search is unavailable on SFTP tabs while recursive remote search is deferred.
+  Typing directly in an SFTP pane still filters its current folder.
 </pre></body></html>
 ]]></description>
-            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.5.0/Portside-0.5.0.dmg" length="4798391" type="application/octet-stream" sparkle:edSignature="WMSAPslV6q7g6eQUCWF04GSj+rfTPuulnTkzoqGPLNGzvdqyw5upt2CGavsnkJ+JNbHDRlL2IsWhJNSYr9YLCQ=="/>
+            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.6.0/Portside-0.6.0.dmg" length="4819514" type="application/octet-stream" sparkle:edSignature="yDWbQLCPFy9WkEUKdxqmxeyRmmkrpCs36cEMcSiD71Ms585EDwrC9b9POepS1IH8yCLcfH4WiT6EwbvarcuaAg=="/>
         </item>
     </channel>
 </rss>
