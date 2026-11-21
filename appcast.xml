@@ -3,15 +3,26 @@
     <channel>
         <title>Portside</title>
         <item>
-            <title>0.6.1</title>
-            <pubDate>Sun, 13 Sep 2026 13:32:22 +0000</pubDate>
-            <sparkle:version>0.6.1</sparkle:version>
-            <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
+            <title>0.6.2</title>
+            <pubDate>Sat, 21 Nov 2026 18:58:44 +0000</pubDate>
+            <sparkle:version>0.6.2</sparkle:version>
+            <sparkle:shortVersionString>0.6.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<!DOCTYPE html><html><body><pre style="font-family: -apple-system; white-space: pre-wrap">
 
-This maintenance release includes the same app features and behavior as 0.6.0.
+This maintenance release fixes two file-pane interaction bugs: double-clicking
+a row when several items are selected, and dragging files again after a drop
+completes.
+
+### Fixes
+
+- Double-clicking a row now opens the item under the pointer even when multiple
+  rows are selected, including `..` after Select All. Double-clicking a column
+  header no longer opens a selected item.
+- Dragging files from a pane continues to start new drags after a completed
+  drop (including drops inside Portside and into other apps), instead of
+  falling back to selecting rows.
 
 ### Known limitations
 
@@ -23,7 +34,7 @@ This maintenance release includes the same app features and behavior as 0.6.0.
   Typing directly in an SFTP pane still filters its current folder.
 </pre></body></html>
 ]]></description>
-            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.6.1/Portside-0.6.1.dmg" length="4817456" type="application/octet-stream" sparkle:edSignature="RK+F/S1yu6ntZrwS7aSmsoeMNAfWq36TynmsqJ+MiqM3Ffs04oeYYdnQE08fKErCmrvjuq1AHVypKb4SinSCBQ=="/>
+            <enclosure url="https://github.com/iliedanila/getportside.com/releases/download/v0.6.2/Portside-0.6.2.dmg" length="4816957" type="application/octet-stream" sparkle:edSignature="h2Jr2Otn2+CUK4lS2Sx5xckP8DONhl/Jr/mkmb4wUHbVGqucN99X0d+3B5d0LnyGfOC739pFLYtLdJY5prD8Ag=="/>
         </item>
     </channel>
 </rss>
